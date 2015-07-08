@@ -58,16 +58,17 @@
             this.monthView1 = new System.Windows.Forms.Calendar.MonthView();
             this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Opcion = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.chkNo = new System.Windows.Forms.CheckBox();
+            this.chkSi = new System.Windows.Forms.CheckBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Opcion = new System.Windows.Forms.GroupBox();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.chkSi = new System.Windows.Forms.CheckBox();
-            this.chkNo = new System.Windows.Forms.CheckBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -111,8 +112,8 @@
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.Opcion.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -416,7 +417,7 @@
             // 
             // calendar1
             // 
-            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 9F);
             calendarHighlightRange1.DayOfWeek = System.DayOfWeek.Monday;
             calendarHighlightRange1.EndTime = System.TimeSpan.Parse("17:00:00");
             calendarHighlightRange1.StartTime = System.TimeSpan.Parse("08:00:00");
@@ -446,6 +447,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.Opcion);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -454,6 +456,58 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // Opcion
+            // 
+            this.Opcion.Controls.Add(this.btnCancelar);
+            this.Opcion.Controls.Add(this.chkNo);
+            this.Opcion.Controls.Add(this.chkSi);
+            this.Opcion.Controls.Add(this.btnAceptar);
+            this.Opcion.Location = new System.Drawing.Point(81, 38);
+            this.Opcion.Name = "Opcion";
+            this.Opcion.Size = new System.Drawing.Size(279, 145);
+            this.Opcion.TabIndex = 0;
+            this.Opcion.TabStop = false;
+            this.Opcion.Text = "Opcion";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(65, 107);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // chkNo
+            // 
+            this.chkNo.AutoSize = true;
+            this.chkNo.Location = new System.Drawing.Point(106, 19);
+            this.chkNo.Name = "chkNo";
+            this.chkNo.Size = new System.Drawing.Size(40, 17);
+            this.chkNo.TabIndex = 2;
+            this.chkNo.Text = "No";
+            this.chkNo.UseVisualStyleBackColor = true;
+            this.chkNo.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // chkSi
+            // 
+            this.chkSi.AutoSize = true;
+            this.chkSi.Location = new System.Drawing.Point(20, 20);
+            this.chkSi.Name = "chkSi";
+            this.chkSi.Size = new System.Drawing.Size(35, 17);
+            this.chkSi.TabIndex = 1;
+            this.chkSi.Text = "Si";
+            this.chkSi.UseVisualStyleBackColor = true;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(65, 68);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.TabIndex = 0;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
             // 
             // contextMenuStrip1
             // 
@@ -491,57 +545,14 @@
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
-            // Opcion
+            // button1
             // 
-            this.Opcion.Controls.Add(this.btnCancelar);
-            this.Opcion.Controls.Add(this.chkNo);
-            this.Opcion.Controls.Add(this.chkSi);
-            this.Opcion.Controls.Add(this.btnAceptar);
-            this.Opcion.Location = new System.Drawing.Point(81, 38);
-            this.Opcion.Name = "Opcion";
-            this.Opcion.Size = new System.Drawing.Size(279, 145);
-            this.Opcion.TabIndex = 0;
-            this.Opcion.TabStop = false;
-            this.Opcion.Text = "Opcion";
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(65, 68);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 0;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            // 
-            // chkSi
-            // 
-            this.chkSi.AutoSize = true;
-            this.chkSi.Location = new System.Drawing.Point(20, 20);
-            this.chkSi.Name = "chkSi";
-            this.chkSi.Size = new System.Drawing.Size(35, 17);
-            this.chkSi.TabIndex = 1;
-            this.chkSi.Text = "Si";
-            this.chkSi.UseVisualStyleBackColor = true;
-            // 
-            // chkNo
-            // 
-            this.chkNo.AutoSize = true;
-            this.chkNo.Location = new System.Drawing.Point(106, 19);
-            this.chkNo.Name = "chkNo";
-            this.chkNo.Size = new System.Drawing.Size(40, 17);
-            this.chkNo.TabIndex = 2;
-            this.chkNo.Text = "No";
-            this.chkNo.UseVisualStyleBackColor = true;
-            this.chkNo.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(65, 107);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(528, 58);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -594,9 +605,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.contextMenuStrip1.ResumeLayout(false);
             this.Opcion.ResumeLayout(false);
             this.Opcion.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -637,6 +648,7 @@
         private System.Windows.Forms.CheckBox chkSi;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button button1;
 
     }
 }
