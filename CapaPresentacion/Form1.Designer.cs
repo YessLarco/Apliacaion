@@ -67,6 +67,7 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.chkSi = new System.Windows.Forms.CheckBox();
             this.chkNo = new System.Windows.Forms.CheckBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -492,12 +493,13 @@
             // 
             // Opcion
             // 
+            this.Opcion.Controls.Add(this.btnCancelar);
             this.Opcion.Controls.Add(this.chkNo);
             this.Opcion.Controls.Add(this.chkSi);
             this.Opcion.Controls.Add(this.btnAceptar);
             this.Opcion.Location = new System.Drawing.Point(81, 38);
             this.Opcion.Name = "Opcion";
-            this.Opcion.Size = new System.Drawing.Size(200, 100);
+            this.Opcion.Size = new System.Drawing.Size(279, 145);
             this.Opcion.TabIndex = 0;
             this.Opcion.TabStop = false;
             this.Opcion.Text = "Opcion";
@@ -531,6 +533,15 @@
             this.chkNo.Text = "No";
             this.chkNo.UseVisualStyleBackColor = true;
             this.chkNo.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(65, 107);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -625,6 +636,7 @@
         private System.Windows.Forms.CheckBox chkNo;
         private System.Windows.Forms.CheckBox chkSi;
         private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCancelar;
 
     }
 }
